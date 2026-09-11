@@ -78,7 +78,7 @@ class ClienteDAO extends DAO {
      * @returns 
      */
     excluir(clienteId){        
-        const sql = "DELETE FROM cliente WHERE clienteId = ?";
+        const sql = "DELETE FROM clientead WHERE clienteId = ?";
         const params = [clienteId];
 
         return this.run(sql, params);
