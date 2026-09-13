@@ -21,7 +21,9 @@ function createDbConnection() {
     /** Cria a tabela no banco de dados */
     createTable(db);
   });
+  
   console.log("Conexão com SQLite foi estabelecida");
+
   return db;
 }
 
@@ -44,5 +46,6 @@ function createTable(db) {
      `);
   }
 
-  module.exports = createDbConnection();
+// Inicializa a conexão e criação da tabela
+module.exports = createDbConnection();
   
